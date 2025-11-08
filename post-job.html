@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobPortal - Post a Job</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    form {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #1abc9c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JobPortal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="post-job.html">Post a Job</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <form>
+    <h2>Post a New Job</h2>
+    <input type="text" placeholder="Job Title" required>
+    <input type="text" placeholder="Company Name" required>
+    <input type="text" placeholder="Location" required>
+    <select required>
+      <option value="">Select Job Type</option>
+      <option>Full-Time</option>
+      <option>Part-Time</option>
+      <option>Internship</option>
+    </select>
+    <textarea placeholder="Job Description..." rows="5" required></textarea>
+    <button type="submit">Submit Job</button>
+  </form>
+
+  <footer>
+    &copy; 2025 JobPortal. Designed with ❤ for job seekers and recruiters.
+  </footer>
+</body>
+</html>
